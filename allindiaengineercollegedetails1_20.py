@@ -1417,9 +1417,12 @@ def scrape_courses(driver, URLS):
     }
     try:
         driver.get(URLS["courses"])
-    except selenium.common.exceptions.InvalidSessionIdException:
-        driver = webdriver.Chrome(options=options)
-        driver.get(URLS["courses"])
+    except WebDriverException as e:
+        print(f"❌ Failed to load URL: {URLS['courses']}")
+        print(e)
+        return []
+   
+      
     
     wait = WebDriverWait(driver, 20)
     
