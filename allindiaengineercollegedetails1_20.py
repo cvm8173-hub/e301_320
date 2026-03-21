@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/sagar-institute-of-technology-sitech-hyderabad-mehdipatnam-29958",
-  "https://www.shiksha.com/college/vaagdevi-institute-of-technology-and-science-vits-kadapa-37821",
-  "https://www.shiksha.com/college/om-paramedical-and-technical-education-dwarka-delhi-41922",
-  "https://www.shiksha.com/college/arham-veerayatan-institute-of-engineering-technology-and-research-gujarat-other-49356",
-  "https://www.shiksha.com/college/panchwati-institute-of-engineering-and-technology-meerut-60041",
-  "https://www.shiksha.com/college/sree-krishna-college-of-engineering-vellore-61677",
-  "https://www.shiksha.com/college/institute-of-food-science-and-technology-majrigrant-veer-chandra-singh-garhwali-uttarakhand-university-of-horticulture-and-forestry-uttarakhand-other-65981",
-  "https://www.shiksha.com/college/daripally-anantha-ramulu-college-of-engineering-and-technology-khammam-68395",
-  "https://www.shiksha.com/college/icri-srinivas-university-mangalore-145695",
-  "https://www.shiksha.com/college/vrs-and-ynr-college-of-engineering-and-technology-andhra-pradesh-other-23101",
-  "https://www.shiksha.com/college/adarsha-institute-of-technology-kundana-bangalore-46163",
-  "https://www.shiksha.com/college/sunaina-sanskrit-mahavidalaya-solan-116833",
-  "https://www.shiksha.com/college/lloyd-institute-of-management-and-technology-uttar-pradesh-other-148609",
-  "https://www.shiksha.com/college/lucknow-model-institute-of-technology-and-management-36369",
-  "https://www.shiksha.com/college/marudhar-engineering-college-bikaner-40824",
-  "https://www.shiksha.com/college/aditya-group-of-institutions-yelahanaka-bangalore-40868",
-  "https://www.shiksha.com/college/ggs-college-of-modern-technology-ggs-mohali-43031",
-  "https://www.shiksha.com/college/swamy-vivekananda-engineering-college-vizianagaram-46640",
-  "https://www.shiksha.com/college/rvs-faculty-of-management-rvs-technical-campus-coimbatore-49439",
-  "https://www.shiksha.com/college/vijayanjali-institute-of-technology-balasore-61425",
+  "https://www.shiksha.com/college/b-r-d-college-of-management-and-sciences-roorkee-187455",
+  "https://www.shiksha.com/college/government-college-of-nursing-durg-187985",
+  "https://www.shiksha.com/college/manav-institute-of-pharmacy-hisar-195343",
+  "https://www.shiksha.com/college/s-n-ayurvedic-college-bargarh-195761",
+  "https://www.shiksha.com/college/district-hospital-vijayapura-karnataka-other-199705",
+  "https://www.shiksha.com/college/aviram-gramin-vikas-swyam-sevi-sansthan-college-of-pharmacy-jharkhand-other-207579",
+  "https://www.shiksha.com/college/ayushman-college-of-pharmacy-tumkur-207687",
+  "https://www.shiksha.com/college/ses-pharmacy-college-karnataka-other-207895",
+  "https://www.shiksha.com/college/shashikote-college-of-pharmacy-bangalore-207907",
+  "https://www.shiksha.com/college/shree-dhanvantri-college-of-pharmacy-karnataka-other-207911",
+  "https://www.shiksha.com/college/shuttaria-institute-of-pharmaceutical-science-bangalore-207923",
+  "https://www.shiksha.com/college/sri-gururaja-college-of-pharmacy-bangalore-207937",
+  "https://www.shiksha.com/college/vidya-bharath-college-of-pharmacy-bangalore-208003",
+  "https://www.shiksha.com/college/rani-hospital-ranchi-240864",
+  "https://www.shiksha.com/college/accord-superspeciality-hospital-faridabad-241914",
+  "https://www.shiksha.com/college/jaiprakash-hospital-and-research-centre-rourkela-243678",
+  "https://www.shiksha.com/college/apollo-hospitals-bilaspur-243766",
+  "https://www.shiksha.com/college/balvir-singh-tomar-institute-of-medical-sciences-research-and-hospital-jaipur-245104",
+  "https://www.shiksha.com/college/netaji-subhas-medical-college-hospital-seraikala-jharkhand-other-245990",
+  "https://www.shiksha.com/college/s-chavan-college-of-pharmacy-nellore-61051",
 ]
 
 
@@ -9246,7 +9246,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 2021
+    c_count = 3741
 
     try:
         for base_url in BASE_URL:
