@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/b-r-d-college-of-management-and-sciences-roorkee-187455",
-  "https://www.shiksha.com/college/government-college-of-nursing-durg-187985",
-  "https://www.shiksha.com/college/manav-institute-of-pharmacy-hisar-195343",
-  "https://www.shiksha.com/college/s-n-ayurvedic-college-bargarh-195761",
-  "https://www.shiksha.com/college/district-hospital-vijayapura-karnataka-other-199705",
-  "https://www.shiksha.com/college/aviram-gramin-vikas-swyam-sevi-sansthan-college-of-pharmacy-jharkhand-other-207579",
-  "https://www.shiksha.com/college/ayushman-college-of-pharmacy-tumkur-207687",
-  "https://www.shiksha.com/college/ses-pharmacy-college-karnataka-other-207895",
-  "https://www.shiksha.com/college/shashikote-college-of-pharmacy-bangalore-207907",
-  "https://www.shiksha.com/college/shree-dhanvantri-college-of-pharmacy-karnataka-other-207911",
-  "https://www.shiksha.com/college/shuttaria-institute-of-pharmaceutical-science-bangalore-207923",
-  "https://www.shiksha.com/college/sri-gururaja-college-of-pharmacy-bangalore-207937",
-  "https://www.shiksha.com/college/vidya-bharath-college-of-pharmacy-bangalore-208003",
-  "https://www.shiksha.com/college/rani-hospital-ranchi-240864",
-  "https://www.shiksha.com/college/accord-superspeciality-hospital-faridabad-241914",
-  "https://www.shiksha.com/college/jaiprakash-hospital-and-research-centre-rourkela-243678",
-  "https://www.shiksha.com/college/apollo-hospitals-bilaspur-243766",
-  "https://www.shiksha.com/college/balvir-singh-tomar-institute-of-medical-sciences-research-and-hospital-jaipur-245104",
-  "https://www.shiksha.com/college/netaji-subhas-medical-college-hospital-seraikala-jharkhand-other-245990",
-  "https://www.shiksha.com/college/s-chavan-college-of-pharmacy-nellore-61051",
+  "https://www.shiksha.com/college/swami-vivekanand-college-of-pharmacy-rajasthan-other-237480",
+  "https://www.shiksha.com/college/a-k-g-institute-of-pharmacy-uttar-pradesh-other-237486",
+  "https://www.shiksha.com/college/baiswara-pharmacy-college-uttar-pradesh-other-237506",
+  "https://www.shiksha.com/college/s-n-s-k-institute-of-nursing-and-paramedical-ghazipur-237572",
+  "https://www.shiksha.com/college/neotia-getwel-multispecialty-hospital-siliguri-240532",
+  "https://www.shiksha.com/college/tamil-nadu-government-multi-super-specialty-hospital-chennai-240594",
+  "https://www.shiksha.com/college/ananthapuri-hospitals-and-research-institute-thiruvananthapuram-240632",
+  "https://www.shiksha.com/college/mark-hospital-bilaspur-240828",
+  "https://www.shiksha.com/college/prs-hospital-thiruvananthapuram-240858",
+  "https://www.shiksha.com/college/namco-hospital-nashik-241900",
+  "https://www.shiksha.com/college/guru-gobind-singh-university-college-jandiala-gndu-jalandhar-242314",
+  "https://www.shiksha.com/college/viveka-superspeciality-hospital-research-centre-nagpur-243764",
+  "https://www.shiksha.com/college/government-medical-college-jaisalmer-245314",
+  "https://www.shiksha.com/college/dr-n-b-institute-of-pharmacy-education-and-research-chitradurga-146819",
+  "https://www.shiksha.com/college/rns-institute-of-pharmacy-gwalior-147225",
+  "https://www.shiksha.com/college/pps-pharmacy-college-uttar-pradesh-other-148733",
+  "https://www.shiksha.com/college/iem-college-of-pharmacy-barabanki-148753",
+  "https://www.shiksha.com/college/aashirwad-pharmacy-college-muktsar-154857",
+  "https://www.shiksha.com/college/ap-college-of-pharmacy-uttar-pradesh-other-181099",
+  "https://www.shiksha.com/college/chaudhary-college-of-pharmacy-uttar-pradesh-other-181147",
 ]
 
 
@@ -9246,7 +9246,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 3741
+    c_count = 4101
 
     try:
         for base_url in BASE_URL:
