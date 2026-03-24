@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/swami-vivekanand-college-of-pharmacy-rajasthan-other-237480",
-  "https://www.shiksha.com/college/a-k-g-institute-of-pharmacy-uttar-pradesh-other-237486",
-  "https://www.shiksha.com/college/baiswara-pharmacy-college-uttar-pradesh-other-237506",
-  "https://www.shiksha.com/college/s-n-s-k-institute-of-nursing-and-paramedical-ghazipur-237572",
-  "https://www.shiksha.com/college/neotia-getwel-multispecialty-hospital-siliguri-240532",
-  "https://www.shiksha.com/college/tamil-nadu-government-multi-super-specialty-hospital-chennai-240594",
-  "https://www.shiksha.com/college/ananthapuri-hospitals-and-research-institute-thiruvananthapuram-240632",
-  "https://www.shiksha.com/college/mark-hospital-bilaspur-240828",
-  "https://www.shiksha.com/college/prs-hospital-thiruvananthapuram-240858",
-  "https://www.shiksha.com/college/namco-hospital-nashik-241900",
-  "https://www.shiksha.com/college/guru-gobind-singh-university-college-jandiala-gndu-jalandhar-242314",
-  "https://www.shiksha.com/college/viveka-superspeciality-hospital-research-centre-nagpur-243764",
-  "https://www.shiksha.com/college/government-medical-college-jaisalmer-245314",
-  "https://www.shiksha.com/college/dr-n-b-institute-of-pharmacy-education-and-research-chitradurga-146819",
-  "https://www.shiksha.com/college/rns-institute-of-pharmacy-gwalior-147225",
-  "https://www.shiksha.com/college/pps-pharmacy-college-uttar-pradesh-other-148733",
-  "https://www.shiksha.com/college/iem-college-of-pharmacy-barabanki-148753",
-  "https://www.shiksha.com/college/aashirwad-pharmacy-college-muktsar-154857",
-  "https://www.shiksha.com/college/ap-college-of-pharmacy-uttar-pradesh-other-181099",
-  "https://www.shiksha.com/college/chaudhary-college-of-pharmacy-uttar-pradesh-other-181147",
+  "https://www.shiksha.com/college/swami-vivekananda-educational-and-rural-development-trust-raichur-207983",
+  "https://www.shiksha.com/college/sri-sai-college-of-pharmacy-bhopal-208055",
+  "https://www.shiksha.com/college/santoshi-institute-of-pharmaceutical-education-and-research-cuttack-208149",
+  "https://www.shiksha.com/college/laxmi-college-of-pharmacy-jaipur-208197",
+  "https://www.shiksha.com/college/cs-jain-college-of-pharmacy-cuddalore-208227",
+  "https://www.shiksha.com/college/laxmi-narayana-college-of-pharmacy-dharmapuri-208241",
+  "https://www.shiksha.com/college/lord-krishna-institute-for-education-saharanpur-208317",
+  "https://www.shiksha.com/college/rosy-roayl-international-college-of-physiotherapy-bangalore-210823",
+  "https://www.shiksha.com/college/sanjivani-group-of-institutes-ahmednagar-214781",
+  "https://www.shiksha.com/college/sanjivani-institute-of-pharmacy-and-research-ahmednagar-224911",
+  "https://www.shiksha.com/college/greenway-institute-of-management-studies-roorkee-229061",
+  "https://www.shiksha.com/college/divy-jyoti-pharmacy-college-sidhi-230058",
+  "https://www.shiksha.com/college/late-shri-s-b-purushottam-college-of-pharmacy-akola-231424",
+  "https://www.shiksha.com/college/nihal-shyam-group-of-institutions-pilibhit-237072",
+  "https://www.shiksha.com/college/prem-kumari-college-of-medical-sciences-uttar-pradesh-other-237092",
+  "https://www.shiksha.com/college/ramratti-devi-college-of-pharmacy-uttar-pradesh-other-237112",
+  "https://www.shiksha.com/college/s-d-college-of-education-and-medical-sciences-ambedkar-nagar-237116",
+  "https://www.shiksha.com/college/shri-lal-bahadur-shastri-degree-college-gonda-237172",
+  "https://www.shiksha.com/college/sri-rudra-shiv-snsk-institute-of-education-ghazipur-237174",
+  "https://www.shiksha.com/college/ainel-college-of-pharmacy-hooghly-237230",
 ]
 
 
@@ -9246,7 +9246,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 4101
+    c_count = 4461
 
     try:
         for base_url in BASE_URL:
