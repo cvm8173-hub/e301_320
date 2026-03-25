@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/swami-vivekananda-educational-and-rural-development-trust-raichur-207983",
-  "https://www.shiksha.com/college/sri-sai-college-of-pharmacy-bhopal-208055",
-  "https://www.shiksha.com/college/santoshi-institute-of-pharmaceutical-education-and-research-cuttack-208149",
-  "https://www.shiksha.com/college/laxmi-college-of-pharmacy-jaipur-208197",
-  "https://www.shiksha.com/college/cs-jain-college-of-pharmacy-cuddalore-208227",
-  "https://www.shiksha.com/college/laxmi-narayana-college-of-pharmacy-dharmapuri-208241",
-  "https://www.shiksha.com/college/lord-krishna-institute-for-education-saharanpur-208317",
-  "https://www.shiksha.com/college/rosy-roayl-international-college-of-physiotherapy-bangalore-210823",
-  "https://www.shiksha.com/college/sanjivani-group-of-institutes-ahmednagar-214781",
-  "https://www.shiksha.com/college/sanjivani-institute-of-pharmacy-and-research-ahmednagar-224911",
-  "https://www.shiksha.com/college/greenway-institute-of-management-studies-roorkee-229061",
-  "https://www.shiksha.com/college/divy-jyoti-pharmacy-college-sidhi-230058",
-  "https://www.shiksha.com/college/late-shri-s-b-purushottam-college-of-pharmacy-akola-231424",
-  "https://www.shiksha.com/college/nihal-shyam-group-of-institutions-pilibhit-237072",
-  "https://www.shiksha.com/college/prem-kumari-college-of-medical-sciences-uttar-pradesh-other-237092",
-  "https://www.shiksha.com/college/ramratti-devi-college-of-pharmacy-uttar-pradesh-other-237112",
-  "https://www.shiksha.com/college/s-d-college-of-education-and-medical-sciences-ambedkar-nagar-237116",
-  "https://www.shiksha.com/college/shri-lal-bahadur-shastri-degree-college-gonda-237172",
-  "https://www.shiksha.com/college/sri-rudra-shiv-snsk-institute-of-education-ghazipur-237174",
-  "https://www.shiksha.com/college/ainel-college-of-pharmacy-hooghly-237230",
+  "https://www.shiksha.com/college/ankura-hospital-for-women-and-children-hyderabad-106135",
+  "https://www.shiksha.com/college/karmveer-keshavlalji-harakchandji-abad-arts-shriman-motilalji-girdharilalji-lodha-commerce-and-shriman-p-h-jain-science-college-nashik-141087",
+  "https://www.shiksha.com/college/raigad-college-of-pharmacy-150687",
+  "https://www.shiksha.com/college/shri-babubhai-g-patel-college-of-physiotherapy-anand-196353",
+  "https://www.shiksha.com/provider/unitus-health-academy-203303",
+  "https://www.shiksha.com/college/puri-college-of-pharmacy-208147",
+  "https://www.shiksha.com/college/k-c-bajaj-college-of-pharmacy-research-nagpur-236706",
+  "https://www.shiksha.com/college/chettinad-academy-of-research-and-education-kolar-245488",
+  "https://www.shiksha.com/college/arrdekta-homoeopathic-medical-college-and-hospital-sabarkantha-182229",
+  "https://www.shiksha.com/college/g-e-m-s-college-of-physiotherapy-srikakulam-188341",
+  "https://www.shiksha.com/college/ayurved-mahavidyalaya-mumbai-189649",
+  "https://www.shiksha.com/college/thirumala-college-of-physiotherapy-nizamabad-194361",
+  "https://www.shiksha.com/college/matoshri-institute-of-pharmacy-nashik-89131",
+  "https://www.shiksha.com/college/get-group-of-institution-uttarakhand-other-98073",
+  "https://www.shiksha.com/college/doon-valley-institute-of-pharmacy-and-medicine-karnal-156883",
+  "https://www.shiksha.com/college/balaji-college-of-pharmacy-district-faridabad-self-financed-179863",
+  "https://www.shiksha.com/college/kvg-ayurvedic-medical-college-sullia-185761",
+  "https://www.shiksha.com/college/k-e-s-vengurla-homoeopathy-college-189573",
+  "https://www.shiksha.com/college/crescent-educational-trust-crescent-institute-of-pharmacy-guwahati-207535",
+  "https://www.shiksha.com/university/surendranagar-university-gujarat-other-236440",
 ]
 
 
@@ -9246,7 +9246,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 4461
+    c_count = 2741
 
     try:
         for base_url in BASE_URL:
